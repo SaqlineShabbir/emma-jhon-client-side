@@ -1,0 +1,11 @@
+.product{
+    display: flex;
+}
+.button{
+    border:none;
+    padding:10px 50px;
+    background-color:#e2daeb;
+}
+.button:hover{
+    color:#ff6e6c;
+}

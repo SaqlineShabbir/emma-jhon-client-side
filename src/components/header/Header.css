@@ -1,0 +1,33 @@
+.header-logo img{
+   height:40px;
+   
+}
+.header-logo{
+    text-align:center;
+}
+.my-bg{
+    background-color:#67568c;
+}
+.nav-ul{
+    font-size:20px;
+    
+}
+.nav-ul li:hover{
+    color:#ff6e6c;
+}
+.nav-btn{
+    border:1px solid #fff
+}
+.nav-btn:hover{
+    background-color:#ff6e6c;
+}
+.navbar-brand{
+    background-color:#fff;
+    border-radius: 5px;
+    padding:5px;
+    width: 300px;
+    margin-right:px;
+}
+.nav ul li{
+    cursor: pointer;
+}

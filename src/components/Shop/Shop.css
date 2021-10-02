@@ -1,0 +1,14 @@
+.shop-container{
+  
+    
+    display:grid;
+    grid-template-columns:3fr 1fr ;
+}
+.product-container{
+    
+    margin-right: 10px;
+    margin-left: 50px;
+}
+.s-btn{
+    background-color:#67568c;
+}
