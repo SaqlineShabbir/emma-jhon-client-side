@@ -37,9 +37,9 @@ const grandTotal = total+shipping;
     <h5>Total - {grandTotal.toFixed(2)}</h5>
   </div>
 
-  <button className="card-footer text-center button  border"> {fontawesome} Purchase
-  </button>
-
+  {/* <button className="card-footer text-center button  border"> {fontawesome} Purchase
+  </button> */}
+     {props.children}
 </div>
 </div>
     );

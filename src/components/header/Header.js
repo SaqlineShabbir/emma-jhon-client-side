@@ -1,13 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
+import useFirebase from '../../hooks/UseFirebase';
 import logo from '../../images/logo.png'
 import './Header.css'
 const Header = () => {
-  
+  const {user,logOut} = useAuth();
     return (
-        <header className="header" >
+      <>
+         <header className="header" > 
 
-<nav className="navbar navbar-expand-lg navbar-light my-bg">
+<nav className="navbar navbar-expand-lg navbar-light my-bg navbar  ">
   <div className="container-fluid header-logo ">
     <a className="navbar-brand " href="#"><img src={logo} alt="" /></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +27,16 @@ const Header = () => {
         <li className="nav-item">
           <NavLink className="nav-link text-white mx-5" to="/Inventory">Manage Inventory Here</NavLink>
         </li>
-        
+       
+        {
+      user.email ?
+       <button onClick={logOut}><i className="fas fa-user"> </i> Log Out</button>
+      
+       :
+        <li className="nav-item">
+          <NavLink className="nav-link text-white mx-5" to="/login">Log In</NavLink>
+        </li>
+       }
         
       </ul>
       
@@ -32,7 +44,13 @@ const Header = () => {
   </div>
 </nav>
 
+
+
+
+
+
         </header>
+        </>
     );
 };
 

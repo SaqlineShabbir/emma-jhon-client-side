@@ -1,0 +1,27 @@
+.login{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+
+
+@media Only screen and (max-width:688px){
+
+    .login{
+        width: 100%;
+        display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:0px ;
+    padding:0px;
+        
+    }
+    .login-second{
+        margin: 0px;
+        padding: 0px;
+        width:100%;
+
+    }
+}

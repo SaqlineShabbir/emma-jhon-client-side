@@ -12,3 +12,40 @@
 .s-btn{
     background-color:#67568c;
 }
+
+.pagination{
+    margin: 30px;
+}
+.pagination button{
+    padding-inline: 20px;
+    margin:10px;
+    
+}
+.pagination .selected{
+    background-color: rgb(36, 36, 212);
+    color: white;
+}
+@media Only screen and (max-width:688px){
+    .shop-container{
+        grid-template-columns:repeat(1,1fr)
+    }
+
+    .product-container{
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media  Only screen and (min-width:689px) and (max-width:991px){
+    .shop-container{
+        grid-template-columns:3fr 2fr;
+        margin:0px;
+    }
+    .product-container{
+        margin: 0;
+        padding: 10px;
+    }
+    .cart-container{
+        margin-right: 10px;
+    }
+}
